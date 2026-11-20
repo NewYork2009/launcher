@@ -1,10 +1,12 @@
 @echo off
-setlocal
-set "SCRIPT=%~dp0main.py"
+cd /d "%~dp0"
 where pythonw >nul 2>nul
 if %errorlevel%==0 (
-  start "" pythonw "%SCRIPT%"
-) else (
-  start "" python "%SCRIPT%"
+  start "" /b pythonw main.py && exit /b
 )
-endlocal
+python main.py
+if errorlevel 1 (
+  echo.
+  echo ===== ОШИБКА ЗАПУСКА — пришли скрин этого окна =====
+  pause
+)
