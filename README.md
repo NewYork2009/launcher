@@ -22,6 +22,13 @@ pip install -r requirements.txt   # одна библиотека — keyboard, 
 python main.py
 ```
 
+### Без командной строки (Windows)
+
+- **Launcher.bat** — двойной щелчок, и лаунчер открывается без чёрного окна
+- **AddToStartup.bat** — двойной щелчок один раз, и лаунчер будет сам
+  стартовать вместе с Windows (убрать: `Win+R` → `shell:startup` → удалить
+  `Launcher.bat`)
+
 На Windows/macOS tkinter уже встроен. На Linux: `sudo apt install python3-tk`.
 На Linux под X11 хоткей работает из коробки; на Wayland глобальные хоткеи
 ограничены системой — держи окно открытым.
