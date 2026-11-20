@@ -12,11 +12,16 @@ import random
 import tkinter as tk
 
 from game import (
+    CELL,
     COLS,
     COLORS,
     Game,
+    PANEL_W,
+    PALETTE,
     ROWS,
     SHAPES,
+    WINDOW_H,
+    WINDOW_W,
     load_record,
     save_record,
 )
